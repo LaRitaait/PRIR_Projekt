@@ -1,4 +1,5 @@
-# 🌐 Web Data Crawler – Projekt PRiR
+# 🌐 Web Data Crawler – Projekt semestralny PRiR
+Zofia Głowacka, 21234
 
 Aplikacja rozproszona do automatycznego pobierania, selekcji i zapisu danych z witryn internetowych, stworzona w ramach przedmiotu **Przetwarzanie równoległe i rozproszone (PRiR)**.
 
@@ -46,9 +47,7 @@ Projekt składa się z trzech głównych modułów, każdy uruchamiany w osobnym
 
 ## 🚀 Jak uruchomić
 
-1. **Sklonuj repozytorium:**
-   ```bash
-   git clone https://github.com/twoj_login/twoj_projekt.git
-   cd twoj_projekt
+   git clone https://github.com/LaRitaait/PRIR_Projekt.git
+   cd prir
    docker-compose up --build
 
