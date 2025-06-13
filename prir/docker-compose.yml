@@ -1,0 +1,32 @@
+version: '3.9'
+
+services:
+  frontend:
+    build: ./frontend
+    ports:
+      - "5000:5000"
+    depends_on:
+      - engine
+      - db
+    volumes:
+      - ./frontend:/app
+
+  engine:
+    build: ./engine
+    ports:
+      - "8000:8000"         # <--- DODANE: udostępnia FastAPI na localhost
+    depends_on:
+      - db
+    volumes:
+      - ./engine:/app
+
+  db:
+    image: mongo:6
+    restart: always
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo_data:/data/db
+
+volumes:
+  mongo_data:
