@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <title>Web Crawler</title>
+</head>
+<body>
+  <h1>Web Crawler</h1>
+  <form method="post">
+    <label for="urls">Adresy URL (jeden na linię):</label><br />
+    <textarea id="urls" name="urls" rows="8" cols="50" placeholder="https://example.com&#10;https://another.com"></textarea><br /><br />
+
+    <label for="profile">Wybierz profil danych:</label><br />
+    <select id="profile" name="profile">
+      <option value="emails">Adresy email</option>
+      <option value="phones">Numery telefonów</option>
+      <option value="addresses">Adresy pocztowe</option>
+      <option value="social_links">Linki społecznościowe</option>
+    </select><br /><br />
+
+    <button type="submit">Rozpocznij</button>
+  </form>
+</body>
+</html>
