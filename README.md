@@ -56,9 +56,11 @@ Przechowuje zebrane dane z podziałem na adresy e-mail, numery telefonów, adres
 ## Wykonanie
 
 - Interfejs użytkownika
+  
 ![image](https://github.com/user-attachments/assets/b25b1585-1873-4e06-9113-aed28d9316eb)
 
 - Wyniki po kliknięciu "Rozpocznij"
+  
 ![image](https://github.com/user-attachments/assets/bc6f63e5-b241-4045-8488-5e9f26ad8383)
 
 ---
