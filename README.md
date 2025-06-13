@@ -30,6 +30,14 @@ Projekt opiera się na architekturze mikroserwisowej i pozwala użytkownikowi:
 
 Projekt składa się z trzech głównych modułów, każdy uruchamiany w osobnym kontenerze Docker:
 
+- Frontend (Flask)
+Odpowiada za interfejs użytkownika. Umożliwia wprowadzanie adresów URL, wybór profilu danych oraz przeglądanie wyników.
+
+- Silnik (FastAPI + multiprocessing + asyncio)
+Odpowiada za pobieranie i przetwarzanie danych z podanych stron internetowych. Wykorzystuje asynchroniczność (aiohttp, asyncio) oraz przetwarzanie wieloprocesowe (multiprocessing) do równoległego scrapowania.
+
+- Baza danych (MongoDB)
+Przechowuje zebrane dane z podziałem na adresy e-mail, numery telefonów, adresy pocztowe i linki społecznościowe.
 ---
 
 ## ⚙️ Technologie
@@ -45,9 +53,19 @@ Projekt składa się z trzech głównych modułów, każdy uruchamiany w osobnym
 
 ---
 
+## Wykonanie
+
+- Interfejs użytkownika
+![image](https://github.com/user-attachments/assets/b25b1585-1873-4e06-9113-aed28d9316eb)
+
+- Wyniki po kliknięciu "Rozpocznij"
+![image](https://github.com/user-attachments/assets/bc6f63e5-b241-4045-8488-5e9f26ad8383)
+
+---
+
 ## 🚀 Jak uruchomić
 
-   git clone https://github.com/LaRitaait/PRIR_Projekt.git
-   cd prir
-   docker-compose up --build
+- git clone https://github.com/LaRitaait/PRIR_Projekt.git
+- cd PRIR_Projekt
+- docker-compose up --build
 
